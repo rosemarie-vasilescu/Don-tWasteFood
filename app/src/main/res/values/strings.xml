@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Don\'t Waste Food</string>
+    <string name="api_key">93adb8e7de704683bbe1b3e49df4f956</string>
+    <string-array name="tags">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>dessert</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
+    <!--    Auth-->
+    <string name="SignIn"><u>Sign In</u></string>
+    <string name="SignUp"><u>Sign Up</u></string>
+    <string name="login"><u>Log In</u></string>
+    <string name="register"><u>Register</u></string>
+    <string name="hint_password"><u>Password</u></string>
+
+
+    <string name="title_activity_shopping_list">ShoppingListActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="image_view">Image View</string>
+    <string name="detect">Detect</string>
+    <string name="run_model">Running the model...</string>
+    <string name="restart">Restart</string>
+    <string name="select">Select</string>
+    <string name="live">Live</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="dietary">Dietary</string>
+    <string name="gluten_free">Gluten Free</string>
+    <string name="ketogenic">Ketogenic</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="pescetarian">Pescetarian</string>
+    <string name="vegan">Vegan</string>
+    <string name="meal_type">Meal Type</string>
+    <string name="main_course">Main course</string>
+    <string name="salad">Salad</string>
+    <string name="drink">Drink</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="snack">Snack</string>
+    <string name="appetizer">Appetizer</string>
+    <string name="side_dish">Side Dish</string>
+    <string name="cuisine">Cuisine</string>
+    <string name="french">French</string>
+    <string name="indian">Indian</string>
+    <string name="thai">Thai</string>
+    <string name="chinese">Chinese</string>
+    <string name="mexican">Mexican</string>
+    <string name="mediterranean">Mediterranean</string>
+    <string name="intolerances">Intolerances</string>
+    <string name="dairy">Dairy</string>
+    <string name="peanut">Peanut</string>
+    <string name="soy">Soy</string>
+    <string name="egg">Egg</string>
+    <string name="gluten">Gluten</string>
+    <string name="apply">Apply</string>
+    <string name="dessert">Dessert</string>
+
+    <string name="tv_take_photo">Take photo</string>
+    <string name="tv_description">Select a preset image or take a new photo</string>
+    <string name="tv_placeholder">Object detection demo</string>
+    <string name="search_view">Search view</string>
+    <string name="chatbot_welcome">Please type something to start the conversation with YummyBot. It will search recipes based on the ingredients you choose. Enjoy the taste!</string>
+</resources>

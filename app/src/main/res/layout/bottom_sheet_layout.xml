@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="8dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dietary"
+        android:id="@+id/txt_dietary"
+        android:textColor="@color/dark_gray"
+        android:layout_marginStart="30dp"
+
+        android:textSize="16sp"/>
+      <com.google.android.material.chip.ChipGroup
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/container_diets"
+
+          >
+
+
+          <com.google.android.material.chip.Chip
+              android:id="@+id/btn_gluten_free"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/gluten_free"
+
+              android:textAllCaps="false"
+              style="@style/CustomChipStyle"
+              android:layout_marginStart="8dp"
+
+              />
+
+          <com.google.android.material.chip.Chip
+              android:id="@+id/btn_ketogenic"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:text="@string/ketogenic"
+              style="@style/CustomChipStyle"
+              android:textAllCaps="false"
+              app:layout_constraintStart_toEndOf="@id/btn_gluten_free" />
+
+          <com.google.android.material.chip.Chip
+              android:id="@+id/btn_vegetarian"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/vegetarian"
+              style="@style/CustomChipStyle"
+              android:layout_marginStart="8dp"
+              android:textAllCaps="false" />
+
+
+
+          <com.google.android.material.chip.Chip
+              android:id="@+id/btn_pescetarian"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/pescetarian"
+              style="@style/CustomChipStyle"
+              android:layout_marginStart="8dp"
+              android:textAllCaps="false"
+              />
+          <com.google.android.material.chip.Chip
+              android:id="@+id/btn_vegan"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/vegan"
+              style="@style/CustomChipStyle"
+              android:layout_marginStart="8dp"
+              android:textAllCaps="false" />
+
+
+      </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meal_type"
+            android:layout_marginStart="30dp"
+            android:textSize="16sp"
+            android:textColor="@color/dark_gray"/>
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/container_meal_types"
+            >
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/main_course"
+
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_dessert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                style="@style/CustomChipStyle"
+                android:text="@string/dessert"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_salad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/salad"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/drink"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/breakfast"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_snack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/snack"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_appetizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/appetizer"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_side_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/side_dish"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cuisine"
+            android:layout_marginStart="30dp"
+            android:textSize="16sp"
+            android:textColor="@color/dark_gray"/>
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/container_cuisines"
+            >
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_french"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/french"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_indian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/indian"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_thai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/thai"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/chinese"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_mexican"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/mexican"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_mediterranean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/mediterranean"
+                style="@style/CustomChipStyle"
+
+                android:textAllCaps="false" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intolerances"
+            android:layout_marginStart="30dp"
+            android:textSize="16sp"
+            android:textColor="@color/dark_gray"/>
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/container_intolerances"
+          >
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_dairy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/dairy"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_peanut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/peanut"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_soy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/soy"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_Egg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/egg"
+                style="@style/CustomChipStyle"
+                android:textAllCaps="false" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/btn_gluten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/gluten"
+                style="@style/CustomChipStyle"
+
+                android:textAllCaps="false" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_reset"
+            android:text="Reset"
+            android:textColor="@color/purple_200"
+            android:layout_marginEnd="8dp"
+            style="?attr/materialButtonOutlinedStyle"
+            />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_apply"
+        android:text="@string/apply"
+        android:backgroundTint="@color/purple_200"
+        />
+
+    </LinearLayout>
+</LinearLayout>

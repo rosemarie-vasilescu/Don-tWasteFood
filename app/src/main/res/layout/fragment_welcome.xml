@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".WelcomeFragment"
+android:background="@drawable/login_background">
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_to_register"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="350dp"
+    android:text="@string/SignUp"
+    android:textAllCaps="false"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:backgroundTint="#FFC400"
+
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0" />
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_to_login"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="8dp"
+    android:text="@string/login"
+    android:textAllCaps="false"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:backgroundTint="#FFC400"
+
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_to_register"
+    app:layout_constraintVertical_bias="0.0" />
+
+<ProgressBar
+    android:id="@+id/progressbar_start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="8dp"
+    android:scaleX=".8"
+    android:scaleY=".8"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_to_login"
+    app:layout_constraintVertical_bias="0.281"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

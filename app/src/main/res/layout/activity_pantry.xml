@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PantryActivity"
+    >
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="64dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+            <!--            <androidx.recyclerview.widget.RecyclerView-->
+            <!--                android:id="@+id/recycler_ingredients"-->
+
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--                android:background="@color/bot_back_color"-->
+            <!--                app:layout_constraintBottom_toTopOf="@+id/recycler_ingredients_avaible"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/searchView_pantry" />-->
+            <!--<com.arlib.floatingsearchview.FloatingSearchView-->
+            <!--    android:id="@+id/searchView_pantry"-->
+            <!--    android:layout_width="match_parent"-->
+            <!--    android:layout_height="match_parent"-->
+            <!--    app:floatingSearch_searchHint="Search ingredients"-->
+            <!--    app:floatingSearch_suggestionsListAnimDuration="250"-->
+            <!--    app:floatingSearch_showSearchKey="false"-->
+            <!--    app:floatingSearch_leftActionMode="showHamburger"-->
+            <!--    app:floatingSearch_close_search_on_keyboard_dismiss="true"/>-->
+            <!--            <androidx.appcompat.widget.SearchView-->
+            <!--                android:id="@+id/searchView_pantry"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:showAsAction="ifRoom|collapseActionView"-->
+            <!--                android:background="@color/purple_200"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                app:queryHint="Type to add ingredients..." />-->
+            <!--<androidx.cardview.widget.CardView-->
+            <!--    android:layout_width="match_parent"-->
+            <!--    android:layout_height="match_parent">-->
+            <!--&lt;!&ndash;            <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:id="@+id/recycler_ingredients"&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                app:layout_constraintBottom_toTopOf="@+id/recycler_ingredients_avaible"&ndash;&gt;-->
+            <!--&lt;!&ndash;                app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;                app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;                app:layout_constraintTop_toBottomOf="@+id/searchView_pantry" />&ndash;&gt;-->
+            <!--</androidx.cardview.widget.CardView>-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_ingredients_avaible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:scrollbars="vertical"
+
+ />
+
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btn_search_recipe"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Search Recipe by Ingredients"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--        </LinearLayout>-->
+    </androidx.core.widget.NestedScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/no_ingredients"
+        android:visibility="invisible"
+        android:text="Welcome! \nPlease Add An Ingredient By Clicking On The Search Icon!"
+        android:gravity="center"
+
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_search_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Find Pantry-Ready Recipes"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#926ED3"
+        android:nestedScrollingEnabled="true"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

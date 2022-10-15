@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "717285613794",
+    "project_id": "dontwastefood3",
+    "storage_bucket": "dontwastefood3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717285613794:android:f6d0ea4795c2678c057ebb",
+        "android_client_info": {
+          "package_name": "com.example.dontwastefood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717285613794-dbjh8vo3kbmk27d7528m43gkc5ng9r8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcuG4rUbFANkeq2E0dgdlnKZnXSo5sw8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717285613794-dbjh8vo3kbmk27d7528m43gkc5ng9r8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

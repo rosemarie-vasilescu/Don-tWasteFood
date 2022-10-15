@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="@drawable/dialog_bg">
+
+    <!--    <androidx.appcompat.widget.SearchView-->
+    <!--        style="cus"-->
+    <!--        android:id="@+id/searchView_pantry"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:closeIcon="@drawable/ic_outline_camera"-->
+    <!--app:iconifiedByDefault="false"-->
+    <!--        android:showAsAction="ifRoom|collapseActionView"/>-->
+
+    <ImageView
+        android:id="@+id/ic_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_down"
+       />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toTopOf="@+id/recycler_ingredients_avaible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView_pantry" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
